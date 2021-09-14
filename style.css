@@ -1,0 +1,42 @@
+body{
+    margin: 0;
+    width: 100%;
+    
+} 
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   background-color: rgb(204, 43, 43);
+   width: 100%;
+   height: 70px;
+   position: fixed;
+   z-index: 40;
+}
+.navSecondBlock{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.navFirstBlock{
+    margin-left: 20px;
+    width: 20%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 5px; */
+}
+.navProjectsBlock,.navAboutBlock,.navContactBlock,.navBrrchitectsBlocks{
+    width: 30%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navProjectsBlock:hover,.navAboutBlock:hover,.navContactBlock:hover,.navBrrchitectsBlocks:hover{
+    background-color: rgb(35, 155, 45);
+    padding-top:5px;
+    padding-bottom: 5px;
+}
