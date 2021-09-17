@@ -1,0 +1,67 @@
+
+
+.section__about__text {
+    padding-bottom: 30px;
+    p {
+        display: block;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+    }
+}
+
+.profession {
+    opacity: 0.6;
+    box-sizing: inherit;
+    margin: 15px 0px;
+}
+
+.section__about__contact {
+    width: 100%;
+    display: inline-block;
+    padding: 8px 16px;
+    vertical-align: middle;
+    text-align: center;
+    cursor: pointer;
+    margin: 10px 0px;
+    &:hover {
+        background-color: var( --gray-box-shadow);
+    }
+    & h1 {
+        padding-bottom: 2px;
+    }
+}
+
+.section__about__grid {
+    &__container {
+        filter: grayscale(70%);
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 20px;
+    }
+    &__item {
+        h3 {
+            font-family: "Segoe UI", Arial, sans-serif;
+            font-weight: 400;
+            margin: 10px 0;
+            font-size: 24px;
+        }
+    }
+}
+
+.section__about__grid__item__img img {
+    width: 100%;
+}
+
+@media (max-width: 980px) {
+    .section__about__grid__container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 700px) {
+    .section__about__grid__container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

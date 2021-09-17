@@ -1,0 +1,46 @@
+@import "color";
+@import "variables";
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+    background-color: #fff;
+    box-shadow: 10px 3px var(--gray-box-shadow);
+    color: var(--text-color-black);
+    font-size: 15px;
+    letter-spacing: 3px;
+    font-family: $font;
+    line-height: 1.5;
+    font-weight: 400;
+
+    &__list {
+        display: flex;
+        list-style: none;
+        padding: 20px;
+        font-family: $font;
+    }
+
+    &__link {
+        margin: 0 10px;
+        text-decoration: none;
+        letter-spacing: $latter-spacing;
+        color: #000;
+        padding: 10px 15px;
+        &:hover {
+            background-color: var(--gray-hover);
+            cursor: $cursor;
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .header__menu {
+        display: none;
+    }
+}

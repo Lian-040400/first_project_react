@@ -1,0 +1,37 @@
+@import "variables";
+.main__image {
+    position: relative;
+    padding: 0 0 55% 0;
+    letter-spacing: $latter-spacing;
+    & img {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.main__imge__text {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 35px;
+    color: white;
+    &__br {
+        background-color: var(--black-with-opacity);
+        padding: 15px;
+    }
+    &__architects {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 700px) {
+    .main__imge__text__architects {
+        display: none;
+    }
+}
